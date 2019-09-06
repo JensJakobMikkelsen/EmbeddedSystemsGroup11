@@ -29,19 +29,14 @@ void module_double::thread_B(void) {
 void module_double::method_A(void) {
 	next_trigger(event_A);
 
-	if (eventListenedOn == A && event_A.triggered()) {
+	if (event_A.triggered()) {
 		cout << "Calling from method A" << endl;
 		event_Aack.notify();
 		next_trigger(event_B);
-		eventListenedOn = B;
-		return;
 	}
-
-	if (eventListenedOn == B && event_B.triggered()) {
+	else if (event_B.triggered()) {
 		cout << "Calling from method B" << endl;
 		event_Back.notify();
 		next_trigger(event_A);
-		eventListenedOn = A;
-		return;
 	}
 }

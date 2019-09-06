@@ -4,10 +4,6 @@
 
 SC_MODULE(module_double) {
 	sc_event event_A, event_B, event_Aack, event_Back;
-	bool latestEventProcessedWasA;
-
-	enum Event {A, B
-	} eventListenedOn = A;
 
 	SC_CTOR(module_double) {
 		SC_METHOD(method_A);
