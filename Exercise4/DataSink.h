@@ -13,7 +13,7 @@ SC_MODULE(dataSink) {
 
 	SC_CTOR(dataSink) {
 		SC_THREAD(execute);
-		sensitive_pos << CLK;
+		sensitive << CLK.pos();
 		dont_initialize();
 	}
 

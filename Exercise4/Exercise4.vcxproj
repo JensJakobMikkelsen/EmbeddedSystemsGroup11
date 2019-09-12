@@ -155,11 +155,13 @@
     <ClInclude Include="DataSink.h" />
     <ClInclude Include="DataSource.h" />
     <ClInclude Include="Definitions.h" />
+    <ClInclude Include="Top.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="DataSink.cpp" />
     <ClCompile Include="DataSource.cpp" />
     <ClCompile Include="Exercise4.cpp" />
+    <ClCompile Include="Top.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

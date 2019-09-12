@@ -1,11 +1,11 @@
 // Exercise4.cpp : Defines the entry point for the console application.
 //
 
-#include "DataSource.h" // TODO Remove. Change to "top"
+#include "Top.h"
 
 int sc_main(int argc, char* argv[])
 {
-	dataSource instDataSource("instDataSource"); // TODO Remove. Change to "top"
+	top instTop("instTop");
 
 	sc_start(200, SC_MS);
 

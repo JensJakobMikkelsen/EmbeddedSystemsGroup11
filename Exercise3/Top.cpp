@@ -1,7 +1,6 @@
 #include "Top.h"
 
 top::top(sc_module_name) :
-	sc_module(),
 	io_1("io_1"),
 	io_2("io_2"),
 	producer("producer"),

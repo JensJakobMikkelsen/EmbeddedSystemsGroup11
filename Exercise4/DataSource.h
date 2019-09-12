@@ -13,7 +13,7 @@ SC_MODULE(dataSource) {
 
 	SC_CTOR(dataSource) {
 		SC_THREAD(execute);
-		sensitive_pos << CLK;
+		sensitive << CLK.pos();
 		dont_initialize();
 	}
 
