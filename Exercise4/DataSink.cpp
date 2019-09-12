@@ -1,27 +1,24 @@
 #include "DataSink.h"
 
 void dataSink::execute() {
-	FILE *fp_data;
 	int counter = 0;
 	int data_input;
 	int error_input;
-	int file_error;
 
 	while (1) {
 		wait();
 		if (++counter == 3) {
 			counter = 0;
-			ready = false;
+			ready = SC_LOGIC_0;
 		}
 		else {
-			ready = true;
+			ready = SC_LOGIC_1;
 		}
 
-		if (valid == true) {
+		if (valid == SC_LOGIC_1) {
 			data_input = data.read();
 
-			file_error = fopen_s(&fp_data, OUTPUT_DATA_ARCH, "w");
-			fprintf(fp_data, "%d", data_input);
+			std::cout << data_input << endl;
 		}
 	}
 }

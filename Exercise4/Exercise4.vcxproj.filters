@@ -15,9 +15,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <Text Include="OutputDataArch.txt">
-      <Filter>Resource Files</Filter>
-    </Text>
     <Text Include="InputDataArch.txt">
       <Filter>Resource Files</Filter>
     </Text>

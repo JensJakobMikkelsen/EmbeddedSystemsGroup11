@@ -4,9 +4,9 @@
 #include "Definitions.h"
 
 SC_MODULE(dataSink) {
-	sc_in_clk CLK;
-	sc_out<bool> ready;
-	sc_in<bool> valid;
+	sc_in<sc_logic> CLK;
+	sc_out<sc_logic> ready;
+	sc_in<sc_logic> valid;
 	sc_in<sc_uint<DATA_BITS>> data;
 	sc_in<sc_uint<ERROR_BITS>> error;
 	sc_in<sc_uint<CHANNEL_BITS>> channel;
