@@ -18,7 +18,7 @@ void dataSink::execute() {
 		if (valid == SC_LOGIC_1) {
 			data_input = data.read();
 
-			std::cout << data_input << endl;
+			std::cout << "Sink: Received data at [" << sc_time_stamp() << "] - " << data_input << endl;
 			fprintf(fp_data, "%d\n", data_input);
 		}
 	}
