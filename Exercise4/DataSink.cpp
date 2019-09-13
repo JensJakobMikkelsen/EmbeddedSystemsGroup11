@@ -3,7 +3,7 @@
 void dataSink::execute() {
 	int counter = 0;
 	int data_input;
-	int error_input;
+	int file_error = fopen_s(&fp_data, OUTPUT_DATA_ARCH, "w");
 
 	while (1) {
 		wait();
@@ -19,6 +19,12 @@ void dataSink::execute() {
 			data_input = data.read();
 
 			std::cout << data_input << endl;
+			fprintf(fp_data, "%d\n", data_input);
 		}
 	}
 }
+
+dataSink::~dataSink(void) {
+	fclose(fp_data);
+}
+

@@ -10,12 +10,14 @@ SC_MODULE(dataSink) {
 	sc_in<sc_uint<DATA_BITS>> data;
 	sc_in<sc_uint<ERROR_BITS>> error;
 	sc_in<sc_uint<CHANNEL_BITS>> channel;
+	FILE *fp_data;
 
 	SC_CTOR(dataSink) {
 		SC_THREAD(execute);
 		sensitive << CLK.pos();
 		dont_initialize();
 	}
+	~dataSink(void);
 
 	void execute(void);
 };

@@ -149,6 +149,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <Text Include="InputDataArch.txt" />
+    <Text Include="OutputDataArch.txt" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="DataSink.h" />

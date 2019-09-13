@@ -5,4 +5,5 @@
 #define MAX_CHANNEL     2  // Maximum number of channels actually used
 #define CLK_PERIOD      20 // Nano seconds
 
-#define INPUT_DATA_ARCH "InputDataArch.txt"
+#define INPUT_DATA_ARCH  "InputDataArch.txt"
+#define OUTPUT_DATA_ARCH "OutputDataArch.txt"

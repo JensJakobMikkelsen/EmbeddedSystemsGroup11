@@ -18,6 +18,9 @@
     <Text Include="InputDataArch.txt">
       <Filter>Resource Files</Filter>
     </Text>
+    <Text Include="OutputDataArch.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="DataSink.h">
