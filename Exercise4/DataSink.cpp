@@ -27,4 +27,3 @@ void dataSink::execute() {
 dataSink::~dataSink(void) {
 	fclose(fp_data);
 }
-
