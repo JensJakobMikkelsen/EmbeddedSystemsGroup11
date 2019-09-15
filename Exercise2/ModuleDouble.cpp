@@ -8,7 +8,6 @@ void module_double::thread_A(void) {
 		wait(3, SC_MS, event_Aack);
 		if (event_Aack.triggered()) {
 			cout << "Calling from Aack: " << sc_time_stamp() << endl;
-			return;
 		}
 	}
 }
@@ -21,7 +20,6 @@ void module_double::thread_B(void) {
 		wait(2, SC_MS, event_Back);
 		if (event_Back.triggered()) {
 			cout << "Calling from Back: " << sc_time_stamp() << endl;
-			return;
 		}
 	}
 }

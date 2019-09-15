@@ -11,6 +11,6 @@ void consumer::consume(void) {
 			<< tcpHeader->SequenceNumber
 			<< ", Current Simulation Time: "
 			<< sc_time_stamp()
-			<< endl;
+			<< endl << endl;
 	}
 }
