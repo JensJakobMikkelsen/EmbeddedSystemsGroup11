@@ -1,6 +1,6 @@
 #include "Top.h"
 
-const char *trace_file_name = "Exercise4Top";
+const char *trace_file_name = "Exercise5Top";
 
 top::top(sc_module_name) :
 	clock("instDataSource", 20, SC_NS),
